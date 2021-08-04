@@ -1,0 +1,212 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+  <div id="content">
+    <div class="top_bg">
+
+    </div>
+    <section id="news">
+      <div class="news_title clear">
+        <h2 class="news_tit">공지사항</h2>
+        <h3 class="news_sub">총 <span class="red">77건</span>의 게시글이 있습니다.</h3>
+        <table class="news clear" style="text-align:center; border:1px solid #dddddd; width: 100%;">
+          <colgroup>
+            <col width="10%" />
+            <col width="70%" />
+            <col width="20%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th style="background-color:#eeeeee; text-align:center;">번호</th>
+              <th style="background-color:#eeeeee; text-align:center;">내용</th>
+              <th style="background-color:#eeeeee; text-align:center;">등록일</th>
+            </tr>
+          </thead>
+          <tbody id="boardList">                               
+          </tbody>
+        </table>
+      </div>
+      <div class="bbs2">
+        <span class="prev_btn">이전</span>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <span class="next_btn">다음</span>
+      </div>
+    </section>
+  </div>
+</body>
+
+<script type="text/javascript">
+  $.ajax({
+    url: "board.json",
+    dataType: "json",
+    type: "GET",
+    success: function (data) {
+      $.each(data["datas"], function (index, value) {      
+        var body = "<tr>";
+        if(value.number == "notice")  {
+          body += "<td><span class=num>" + "<img src='img/volume.png'>" + "</span></td>"
+        }else{
+          body += "<td><span class=num>" + value.number + "</span></td>"
+        }        
+        body += "<td><a href=# class=noti>" + value.title + "</a></td>"
+        body += "<td><a href=# class=noti>" + value.date + "</a></td>"
+        body += "</tr>"
+        
+        $('#boardList').append(body);
+      })
+    }
+  });
+</script>
+
+<style>
+  #news {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #news .news_title {
+    font-size: 22px;
+  }
+
+  #news .news_tit {
+    margin: 100px auto 50px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .news_sub {
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 2px solid #000;
+    padding: 40px 0;
+    color: #969696;
+  }
+
+  .news_sub .red {
+    color: #e30613;
+    border-bottom: 20px;
+  }
+
+  .news_tit .news {
+    padding: 20px 0;
+  }
+
+  .news li {}
+
+  .news .num {
+    float: left;
+    font-size: 15px;
+    padding: 15px;
+    font-weight: bold;
+  }
+
+  .news .noti {
+    float: left;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .5s;
+    padding: 15px;
+  }
+
+  .news li:first-child .num {
+    font-size: 18px;
+  }
+
+  .news li:first-child .noti {
+    margin-left: 350px;
+    font-size: 18px;
+  }
+
+  .news li:first-child .date1 {
+    font-size: 18px;
+  }
+
+  .news li:first-child .noti1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 400px;
+  }
+
+  .news li:first-child {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .news li:nth-child(3) {
+    border-bottom: 2px solid #000;
+  }
+
+  .news li .date1 {
+    float: right;
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 15px;
+    font-weight: bold;
+  }
+
+  .news li:hover .noti {
+    color: blue;
+  }
+
+  .icon img {
+    width: 5%;
+  }
+
+  .bbs2 {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .bbs2 span {
+    width: 30px;
+    height: 28px;
+    text-indent: -999em;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .bbs2 .prev_btn {
+    background: #e30613 url(../mcdonald/img/list_prev_btn.png) no-repeat center;
+  }
+
+  .bbs2 .next_btn {
+    background: #e30613 url(../mcdonald/img/list_next_btn.png) no-repeat center;
+  }
+
+  .bbs2 a {
+    width: 30px;
+    height: 28px;
+    line-height: 28px;
+    color: #000;
+    transition: .1s;
+    background: #eee;
+  }
+
+  .bbs2 a:hover {
+    background-color: #e30613;
+    color: #fff;
+    border: 0;
+  }
+</style>
+
+</html>

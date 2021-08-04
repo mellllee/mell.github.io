@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Mcdonald's</title>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+       <div class="logo">
+        <a href="mcdonald.html"></a>
+       </div>
+       <span class="toggle">
+         <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+         </a>
+       </span>
+       <div class="header_box">
+        <ul class="icon_top clear">
+          <li><a href="search.html"><img src="img/search.png" alt=""></a></li>
+          <li><a href="login.html"><img src="img/user.png" alt=""></a></li>
+          <li><a href="cart.html"><img src="img/cart.png" alt=""></a></li>
+        </ul>
+        <nav>
+         <ul class="gnb">
+          <li><a href="menu_bugerset.html">Menu</a>
+            <div class="sub2_1">
+              <ul class="submenu clear">
+                  <li><a href="menu_buger.html">버거 단품</a></li>
+                  <li><a href="menu_bugerset.html">버거 세트</a></li>
+                  <li><a href="menu_lunch.html">맥런치</a></li>
+                  <li><a href="menu_morning.html">맥모닝</a></li>
+                  <li><a href="menu_snack.html">해피스낵</a></li>
+                  <li><a href="menu_dessert.html">사이드＆디저트</a></li>
+                  <li><a href="menu_mcafe.html">맥카페＆음료</a></li>
+                  <li><a href="menu_happymeal.html">해피밀</a></li>        
+                </ul>  
+            </div>
+          </li>
+          <li><a href="store.html">Store</a>
+            <div class="sub2_2">
+              <ul class="submenu clear">
+                  <li><a href="store.html">매장찾기</a></li>
+                  <li><a href="store2.html">임차문의</a></li>            
+                </ul>
+            </div>  
+          </li>
+          <li><a href="promo.html">What's New</a>
+            <div class="sub2_3">
+              <ul class="submenu clear">
+                  <li><a href="promo.html">프로모션</a></li>
+                  <li><a href="news.html">새로운 소식</a></li>
+                  <li><a href="month.html">이달의 해피밀</a></li>
+                </ul>
+            </div>
+          </li>
+          <li><a href="about.html">Story</a>
+            <div class="sub2_4">
+              <ul class="submenu clear">
+                  <li><a href="about.html">브랜드 소개</a></li>
+                  <li><a href="social.html">사회적 책임과 지원</a></li>
+                  <li><a href="competitive.html">맥도날드 경쟁력</a></li>
+                  <li><a href="mccrew.html">맥도날드 사람들</a></li>
+                </ul>
+            </div>
+          </li>
+         </ul>  
+        </nav>
+        <span class="close"><a href="#">닫기</a></span>
+       </div>
+      </div>
+    </header>
+  <div id="content">
+  <div class="cart_check2">
+   <div class="payment2">
+    <h2 class="title">3. 결제 방법</h2>
+    <img src="img/payment.png" alt="">
+    <ul class="paymentlist2">
+      <li><span>결제수단</span>
+      <select class="method2">
+       <option>"결제수단을 선택해주세요"</option>
+       <option>현금(현장결제)</option>
+       <option>카드결제</option>
+       <option>쿠폰 사용</option>
+       <option>포인트 사용</option>
+       </select>  
+      </li>
+      <li><span>카드결제</span>
+      <select class="card2">
+       <option>"카드사를 선택해주세요"</option>
+       <option>만나서 직접 결제(현장결제)</option>
+       <option>삼성카드</option>
+       <option>국민카드</option>
+       <option>NH농협카드</option>
+       <option>비씨카드</option>
+       <option>롯데카드</option>
+       <option>우리카드</option>
+       <option>하나카드</option>
+       </select>      
+      </li>
+    </ul>
+  </div>
+  <form action="address" method ="get">      
+      <div class="tel_num2">
+       <select>
+       <option>휴대폰번호</option>
+       <option>010-1234-5678</option>
+       <option>010-9876-5432</option>
+       <option>010-7777-8888</option>
+       <option>새로운 연락처 추가</option>
+       </select>
+      <input type="tel" id="tel" maxlangth="12" class="mnum" placeholder="휴대폰번호를 입력해 주세요.">
+      <a href="#"><button class="addnum_btn">전화번호 확인</button></a>
+      </div>
+      <div class="add_check">
+       <select>
+       <option>배송주소</option>
+       <option>서울시 종로구 안국동 000-111 101호</option>
+       <option>경기도 고양시 성사동 987번지</option>
+       <option>인천광역시 부평구 부평동 112번지</option>
+       <option>직접입력</option>
+       <input type="text" id="text" size="60" maxlangth="60" placeholder="배달 받으실 주소를 입력해주세요.">
+       </select>      
+      </div>    
+      <div class="order2">
+       <select>
+       <option>* 배달 요청사항</option>
+       <option>문앞에 두고 벨 눌러주세요.</option>
+       <option>문앞에 두고 노크해 주세요.</option>
+       <option>도착하기 전에 전화해 주세요.</option>
+       <option>요청사항 없음</option>
+       <option>직접입력</option>
+       <input type="text" id="text" size="30" maxlangth="30" placeholder="기타 요청사항을 입력해주세요.">
+       </select>      
+      </div>
+     </form>
+  <button class="order_next4"><a href="cart4.html">주문하기</a></button>
+    
+  </div>
+    <footer>
+     <div class="inner clear">
+      <ul class="leftinfo">
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">위치정보 이용약관</a></li>
+        <li><a href="#">사이트맵</a></li>
+        <li><a href="#">임차문의</a></li>
+        <li><a href="#">고객문의</a></li>
+        <li><a href="#">인재채용</a></li>
+      </ul>
+      <ul class="rightinfo">
+        <li>한국맥도날드(유)</li>
+        <li>대표이사: 앤토니 마티네즈</li>
+        <li>사업자등록번호: 101-81-26409</li>
+        <li>전화주문: 1600-5252</li>
+        <li>COPYRIGHT &copy; 2019 ALL RIGHT RESERVED BY McDonald’s</li>
+      </ul>
+      <ul class="icon_btn">
+        <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+        <li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+        <li><a href="#"><img src="img/kakaostory.png" alt=""></a></li>
+        <li><a href="#"><img src="img/web_accessibility.png" alt=""></a></li>
+      </ul>
+     </div> 
+    </footer>
+    <script>
+
+       $(function(){
+        $(".gnb>li").mouseenter(function(){
+            let index = $(this).index();
+            $(".sub_box").stop().slideDown();
+            $(".sub_box>ul").eq(index).show().siblings("ul").hide();
+        });
+           $(".sub_box").mouseleave(function(){
+           $(".sub_box").stop().slideUp();
+        });
+           $(".toggle").click(function(){
+           $(".icon_top").stop().slideDown(300);
+           $(".gnb").stop().fadeOut(300);
+        }); 
+           $(".toggle").dblclick(function(){
+           $(".icon_top").stop().slideUp(300);
+           $(".gnb").stop().fadeIn(300);
+        });
+     });        
+        
+    </script>    
+    </div>
+  </div>
+</body>
+</html>
