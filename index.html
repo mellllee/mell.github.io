@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mel's portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/0caf40c82c.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+ <body>
+<!-- navbar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+        <img src="img/lmh_logo.png" alt="logo" class="mellogo">
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item active" data-link="#home">Home</li>
+      <li class="navbar__menu__item" data-link="#about">About</li>
+      <li class="navbar__menu__item" data-link="#skills">Skills</li>
+      <li class="navbar__menu__item" data-link="#portfolio">Portfolio</li>
+      <li class="navbar__menu__item" data-link="#contact">Contact</li>
+    </ul>
+    <button class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+  <section id="home">
+    <div class="home__container">
+      <img src="img/mel.jpg" alt="mel's porfile photo" class="home__avatar">
+      <h1 class="home__title">
+        안녕하세요,<br>
+        예비 퍼블리셔 이미현 입니다.
+      </h1>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section id="about" class="section section__container">
+      <h1 class="main__title">About me</h1>
+      <p>안녕하세요 퍼블리셔를 꿈꾸는 이미현 입니다.<br>
+        아직 화려한 CSS나 고급 HTML을 사용하는데는 부족함이 있으나<br>
+        끊임없이 공부하고 연습하여 편리하고 재미있게 이용할 수 있는<br>
+        사이트를 만드는 퍼블리셔가 되고싶습니다.<br>
+        유저 입장임과 동시에 사이트를 구현하는 퍼블리셔 입장임을 항상 인지하며<br>
+        늘 고민하고 또 고민하는 퍼블리셔가 되고싶습니다.<br>
+        부족함이 많은 포트폴리오 이지만 앞으로 더 발전시키겠습니다.<br>
+        감사합니다.</p>
+  </section>
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1 class="main__title">Skills</h1>
+      <div class="skill__explain">
+        <ul>
+          <li><img src="img/html.png" alt=""></li>
+          <li class="explain1">웹 표준 준수 및 효율적인 구조를 지향합니다.</li>
+        </ul>
+        <ul>
+          <li><img src="img/css.png" alt=""></li>
+          <li class="explain2">사이트의 특징과 컨셉을 고려하여 조화로운 디자인을 추구합니다.</li>
+        </ul>
+        <ul>
+          <li><img src="img/js.png" alt=""></li>
+          <li class="explain3">Java script를 사용하여 슬라이더, 텍스트, 이미지에 여러 효과를 구현할 수 있습니다.</li>
+        </ul>
+        <ul>
+          <li><img src="img/ps.png" alt=""></li>
+          <li class="explain4">2021년 05월 GTQ1급 포토샵 자격증 취득</li>
+        </ul>
+      </div>
+      <p class="educate">* UI/UX 웹디자인 실무자양성(웹퍼블리셔, 프론트엔드)과정 수료<br>수료 기간: 2020년 12월 29일 ~ 2021년 04월 22일<br>수료 기관명: 더조은컴퓨터아트학원 신촌점</p>
+    </div>
+  </section>
+  <section id="portfolio" class="section">
+    <div class="section__container">
+      <h1 class="main__title">Portfolio</h1>
+      <div class="portfolio__btn">
+        <button class="listbtn selected clicked" data-filter="*">전체보기</button>
+        <button class="listbtn" data-filter="apple">애플</button>
+        <button class="listbtn" data-filter="tiffany">티파니앤코</button>
+        <button class="listbtn" data-filter="mcdonald">맥도날드</button>
+        <button class="listbtn" data-filter="megacoffee">메가커피</button>
+      </div>
+      <div class="portfolio__list">
+        <a href="#portfolio" class="project project__all" target="blank" data-type="all">
+          <img class="project__imgm img1" src="img/website_img/apple_iphone12.jpg" alt="apple">
+          <img class="project__imgp img2" src="img/website_img/apple_pc.jpg" alt="apple">
+          <img class="project__imgp img3" src="img/website_img/apple_macbook.jpg" alt="apple">
+          <img class="project__imgt img4" src="img/website_img/apple_ipad.jpg" alt="apple">
+          <img class="project__imgt img5" src="img/website_img/tiffany_ipadmini.jpg" alt="tiffany">
+          <img class="project__imgp img6" src="img/website_img/tiffany_macbook.png" alt="tiffany">
+          <img class="project__imgm img7" src="img/website_img/tiffany_iphone12.png" alt="tiffany">       
+          <img class="project__imgm img8" src="img/website_img/tiffany_iphone12_2.png" alt="tiffany">
+          <img class="project__imgt img9" src="img/website_img/mcdonald_ipad_mini.jpg" alt="mcdonald">
+          <img class="project__imgp img10" src="img/website_img/mcdonald_macbook.png" alt="mcdonald"> 
+          <img class="project__imgm img11" src="img/website_img/mcdonald_iphone8.png" alt="mcdonald">
+          <img class="project__imgp img12" src="img/website_img/mcdonald_pc.jpg" alt="mcdonald"> 
+          <img class="project__imgp img13" src="img/website_img/mcdonald_pc2.jpg" alt="mcdonald"> 
+          <img class="project__imgp img14" src="img/website_img/mcdonald_pc3.jpg" alt="mcdonald"> 
+          <img class="project__imgp img15" src="img/website_img/mcdonald_pc4.jpg" alt="mcdonald"> 
+          <img class="project__imgp img16" src="img/website_img/mcdonald_pc5.jpg" alt="mcdonald"> 
+          <img class="project__imgm img17" src="img/website_img/mcdonald_iphone12.jpg" alt="mcdonald"> 
+          <img class="project__imgm img18" src="img/website_img/mcdonald_iphone12-2.jpg" alt="mcdonald"> 
+          <img class="project__imgm img19" src="img/website_img/mcdonald_iphone12-3.jpg" alt="mcdonald">  
+          <img class="project__imgm img20" src="img/website_img/mcdonald_iphone12-4.jpg" alt="mcdonald"> 
+          <img class="project__imgt img21" src="img/website_img/megacoffee_ipadmini.jpg" alt="mcegacoffee">
+          <img class="project__imgp img22" src="img/website_img/megacoffee_macbook.png" alt="mcegacoffee">
+          <img class="project__imgm img23" src="img/website_img/megacoffee._iphoneminijpg.png" alt="mcegacoffee">
+        </a>
+        <div id="apple">
+         <a href="#portfolio" class="project" target="blank" data-type="apple">
+          <div class="project_info">
+            <h2>Apple</h2>
+            <h3>(Clone coding with HTML and CSS)</h3><br>
+            <button type="button" class="site__link" target="blank" onclick="window.open('http://mel88.dothome.co.kr/apple/apple.html')">사이트 바로가기</button>
+          </div>
+          <img class="project__imgm img1" src="img/website_img/apple_iphone12.jpg" alt="apple">
+          <img class="project__imgp img2" src="img/website_img/apple_pc.jpg" alt="apple">
+          <img class="project__imgp img3" src="img/website_img/apple_macbook.jpg" alt="apple">
+          <img class="project__imgt img4" src="img/website_img/apple_ipad.jpg" alt="apple">
+         </a>
+        </div>
+        <div id="tiffany">
+         <a href="#portfolio" class="project" target="blank" data-type="tiffany">
+          <div class="project_info">
+            <h2>Tiffany & Co</h2>
+            <h3>(redesign with HTML and CSS)</h3><br>
+            <button type="button" class="site__link" target="blank" onclick="window.open('http://mel88.dothome.co.kr/portfolio/tiffany/tiffany_main.html')">사이트 바로가기</button>
+          </div>
+          <img class="project__imgt img5" src="img/website_img/tiffany_ipadmini.jpg" alt="tiffany">
+          <img class="project__imgp img6" src="img/website_img/tiffany_macbook.png" alt="tiffany">
+          <img class="project__imgm img7" src="img/website_img/tiffany_iphone12.png" alt="tiffany">    
+          <img class="project__imgm img8" src="img/website_img/tiffany_iphone12_2.png" alt="tiffany">
+         </a>
+        </div>
+        <div id="mcdonald">
+          <a href="#portfolio" class="project" dtarget="blank" data-type="mcdonald">
+           <div class="project_info">
+            <h2>Mcdonald</h2>
+            <h3>(Clone coding + redesign with HTML and CSS)</h3><br>
+            <button type="button" class="site__link" target="blank" onclick="window.open('http://mel88.dothome.co.kr/mcdonald/mcdonald.html')">사이트 바로가기</button>
+           </div>
+           <img class="project__imgt img9" src="img/website_img/mcdonald_ipad_mini.jpg" alt="mcdonald">
+           <img class="project__imgp img10" src="img/website_img/mcdonald_macbook.png" alt="mcdonald">
+           <img class="project__imgm img11" src="img/website_img/mcdonald_iphone8.png" alt="mcdonald">
+           <img class="project__imgp img12" src="img/website_img/mcdonald_pc.jpg" alt="mcdonald"> 
+           <img class="project__imgp img13" src="img/website_img/mcdonald_pc2.jpg" alt="mcdonald"> 
+           <img class="project__imgp img14" src="img/website_img/mcdonald_pc3.jpg" alt="mcdonald"> 
+           <img class="project__imgp img15" src="img/website_img/mcdonald_pc4.jpg" alt="mcdonald"> 
+           <img class="project__imgp img16" src="img/website_img/mcdonald_pc5.jpg" alt="mcdonald"> 
+           <img class="project__imgm img17" src="img/website_img/mcdonald_iphone12.jpg" alt="mcdonald"> 
+           <img class="project__imgm img18" src="img/website_img/mcdonald_iphone12-2.jpg" alt="mcdonald"> 
+           <img class="project__imgm img19" src="img/website_img/mcdonald_iphone12-3.jpg" alt="mcdonald">  
+           <img class="project__imgm img20" src="img/website_img/mcdonald_iphone12-4.jpg" alt="mcdonald"> 
+          </a>
+        </div>
+        <div id="megacoffee">
+          <a href="#portfolio" class="project" target="blank" data-type="megacoffee">
+           <div class="project_info">
+            <h2>Megacoffee</h2>
+            <h3>(Clone coding + redesign with HTML and CSS)</h3><br>
+            <button type="button" class="site__link" target="blank" onclick="window.open('http://mel88.dothome.co.kr/megacoffee/megacoffee_main.html')">사이트 바로가기</button>
+           </div>
+           <img class="project__imgt img21" src="img/website_img/megacoffee_ipadmini.jpg" alt="mcegacoffee">
+           <img class="project__imgp img22" src="img/website_img/megacoffee_macbook.png" alt="mcegacoffee">
+           <img class="project__imgm img23" src="img/website_img/megacoffee._iphoneminijpg.png" alt="mcegacoffee">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <div class="section__container">
+      <h1 class="main__title">Contact</h1>
+      <ul class="contact__list">
+        <li class="github"><a href="https://github.com/mellllee/mell.github.io.git"><img src="img/github.png" alt=""></a></li>
+        <li class="dothome"><a href="http://mel88.dothome.co.kr/portfolio/mell88.html"><img src="img/website.png" alt=""></a></li>
+        <li class="email"><a href="mailto:mh_1988@naver.com"><img src="img/email.png" alt=""></a></li>
+      </ul>
+      <p class="copy">&copy; COPYRIGHT 2021 All Right Reserved</p>
+    </div>
+  </section>
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+ </body>
+</html>
